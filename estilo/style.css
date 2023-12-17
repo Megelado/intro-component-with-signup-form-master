@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/bg-intro-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hwb(0 48% 0%);
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    margin: auto;
+}
+
+.card {
+    width: 300px;
+    height: 700px;
+}
+
+.texto h1 {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 40px;
+}
+
+.tente {
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+
+.tente strong {
+    font-weight: 600;
+}
+
+.tente p {
+    font-weight: 400;
+}
+
+.formulario {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.formulario input {
+    width: 100%;
+    height: 40px;
+    text-indent: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(169, 169, 169, 0.256);
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.formulario input:hover, .formulario input:active   {
+    border: 2px solid black;
+}
+
+.formulario .erro:hover, .formulario .erro:active {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+.formulario input::placeholder {
+    color: rgba(0, 0, 0, 0.726);
+}
+
+#msgNome, #msgSobrenome, #msgEmail, #msgSenha {
+    font-size: 0.7em;
+    text-align: right;
+}
+
+.formulario #enviar {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.186) inset;
+    font-weight: 600;
+}
+
+.formulario #enviar:active {
+    background-color: hsla(154, 59%, 51%, 0.69);
+    color: rgba(255, 255, 255, 0.69);
+}
+
+.formulario footer {
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.7em;
+}
+
+.formulario strong {
+    color: hsl(0, 100%, 74%);
+}

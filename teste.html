@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Campo não inserido</title>
+  <script>
+    function verificarCampos() {
+      var campo1 = document.getElementById("campo1").value;
+      var campo2 = document.getElementById("campo2").value;
+      var campo3 = document.getElementById("campo3").value;
+      var campo4 = document.getElementById("campo4").value;
+
+      if (campo1 === "") {
+        exibirMensagem("Nome não foi inserido!");
+        return false;
+      }
+
+      if (campo2 === "") {
+        exibirMensagem("Sobrenome não foi inserido!");
+        return false;
+      }
+
+      if (campo3 === "") {
+        exibirMensagem("email não foi inserido!");
+        return false;
+      } else if (campo3.indexOf === -1) {
+        exibirMensagem("O email digitado não é válido!");
+        return false;
+      }
+
+      if (campo4 === "") {
+        exibirMensagem("Senha não foi inserida!");
+        return false;
+      } else if (campo4.length < 8) {
+        exibirMensagem("A senha deve conter 8 digitos!")
+        return false;
+      }
+
+      // Se todos os campos estiverem preenchidos, o formulário pode ser enviado
+      return true;
+    }
+
+    function exibirMensagem(mensagem) {
+      var mensagemTemporaria = document.createElement("div");
+      mensagemTemporaria.textContent = mensagem;
+      mensagemTemporaria.style.color = "red";
+      mensagemTemporaria.style.marginBottom = "10px";
+
+      var formulario = document.getElementById("formulario");
+      formulario.prepend(mensagemTemporaria);
+
+      setTimeout(function() {
+        mensagemTemporaria.remove();
+      }, 3000); // Remover a mensagem após 3 segundos
+    }
+  </script>
+  
+</head>
+<body>
+  <h1>Campo não inserido</h1>
+  <form id="formulario" onsubmit="return verificarCampos()">
+    <input type="text" id="campo1" placeholder="Nome"><br>
+    <input type="text" id="campo2" placeholder="sobrenome"><br>
+    <input type="email" id="campo3" placeholder="email"><br>
+    <input type="password" id="campo4" placeholder="senha"><br>
+    <input type="submit" value="Enviar">
+  </form>
+
+</body>
+</html>

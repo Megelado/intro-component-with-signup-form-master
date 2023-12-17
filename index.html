@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media.css">
+    
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+
+
+  <main>
+    
+      <div class="card">
+        <div class="texto">
+          <h1>Learn to code by watching others</h1>
+          <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+            but understanding how developers think is invaluable.</p>
+        </div>
+        <div class="conteudo">
+          <div class="tente"><strong>Try it free for 7 days</strong> <p>then $20/mo. thereafter</p></div>
+          <form action="action.php" class="formulario" id="formulario" onsubmit="return verificarCampos();">
+            <input type="text" name="primeiro_nome" id="campo1" placeholder="Nome">
+            <p style="color: red" id="msgNome" class="mensagemErro"></p>
+            <input type="text" name="sobrenome" id="campo2" placeholder="Sobrenome">
+            <p style="color: red" id="msgSobrenome" class="mensagemErro"></p>
+            <input type="email" name="user" id="campo3" placeholder="Endereço Email">
+            <p style="color: red" id="msgEmail" class="mensagemErro"></p>
+            <input type="password" name="senha" id="campo4" placeholder="Senha">
+            <p style="color: red" id="msgSenha" class="mensagemErro"></p>
+            <input id="enviar" type="submit" value="Claim your free trial"/>
+            <footer>By clicking the button, you are agreeing to our <strong>Terms and Services</strong></footer>
+          </form>
+        </div>
+      </div>
+  </main>
+  
+    <script src="./scripts/script.js">
+    </script>
+  </body>
+  </html>
+
+

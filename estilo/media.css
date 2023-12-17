@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 700px) {
+    .card {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        width: 500px;
+        height: 600px;
+    }
+
+    .texto {
+        margin-right: 20px;
+    }
+
+    .texto h1, .texto p {
+        text-align: justify;
+    }
+
+    .texto p {
+        font-size: 0.8em;
+    }
+
+    .tente {
+        background-color: hsl(248, 32%, 49%);
+        color: white;
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+        width: 300px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.19);
+        margin-bottom: 20px;
+        font-size: 0.6em;
+    }
+
+    .tente strong {
+        font-weight: 500;
+        margin-right: 5px;
+    }
+    
+    .tente p {
+        font-weight: 400;
+    }
+
+    .formulario {
+        width: 300px;
+    }
+
+}
